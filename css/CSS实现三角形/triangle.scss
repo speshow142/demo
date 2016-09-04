@@ -1,0 +1,81 @@
+$triangle-color: #FF6666;
+$triangle-bg-color: #CCCCCC;
+
+$item-width: 100px;
+$item-margin: 10px;
+
+@mixin zero-width-height {
+  width: 0;
+  height: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 4 * ($item-width + 2 * $item-margin);
+  margin: 100px auto;
+  border: 1px solid $triangle-bg-color;
+
+  .row {
+    display: flex;
+
+    div {
+      margin: $item-margin;
+      background-color: $triangle-bg-color;
+    }
+
+    .triangle-up {
+      @include zero-width-height;
+      border-left: $item-width / 2 solid transparent;
+      border-right: $item-width / 2 solid transparent;
+      border-bottom: $item-width solid $triangle-color;
+    }
+
+    .triangle-down {
+      @include zero-width-height;
+      border-left: $item-width / 2 solid transparent;
+      border-right: $item-width / 2 solid transparent;
+      border-top: $item-width solid $triangle-color;
+    }
+
+    .triangle-left {
+      @include zero-width-height;
+      border-top: $item-width / 2 solid transparent;
+      border-bottom: $item-width / 2 solid transparent;
+      border-right: $item-width solid $triangle-color;
+    }
+
+    .triangle-right {
+      @include zero-width-height;
+      border-top: $item-width / 2 solid transparent;
+      border-bottom: $item-width / 2 solid transparent;
+      border-left: $item-width solid $triangle-color;
+    }
+
+    .triangle-topleft {
+      @include zero-width-height;
+      border-top: $item-width solid $triangle-color;
+      border-right: $item-width solid transparent;
+    }
+
+    .triangle-topright {
+      @include zero-width-height;
+      border-top: $item-width solid $triangle-color;
+      border-left: $item-width solid transparent;
+    }
+
+    .triangle-bottomleft {
+      @include zero-width-height;
+      border-bottom: $item-width solid $triangle-color;
+      border-right: $item-width solid transparent;
+    }
+
+    .triangle-bottomright {
+      @include zero-width-height;
+      border-bottom: $item-width solid $triangle-color;
+      border-left: $item-width solid transparent;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+}
+
+.container {
+  width: 480px;
+  margin: 100px auto;
+  border: 1px solid #CCCCCC;
+}
+.container .row {
+  display: flex;
+}
+.container .row div {
+  margin: 10px;
+  background-color: #CCCCCC;
+}
+.container .row .triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #FF6666;
+}
+.container .row .triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #FF6666;
+}
+.container .row .triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid #FF6666;
+}
+.container .row .triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid #FF6666;
+}
+.container .row .triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #FF6666;
+  border-right: 100px solid transparent;
+}
+.container .row .triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #FF6666;
+  border-left: 100px solid transparent;
+}
+.container .row .triangle-bottomleft {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #FF6666;
+  border-right: 100px solid transparent;
+}
+.container .row .triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #FF6666;
+  border-left: 100px solid transparent;
+}
+
+/*# sourceMappingURL=triangle.css.map */
