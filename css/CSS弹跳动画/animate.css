@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.box {
+  position: relative;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background: #C00;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  -webkit-animation: box 1 s linear infinite;
+}
+.box:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 128px;
+  left: 52px;
+  width: 44px;
+  height: 3px;
+  background-color: #EAEAEA;
+  border-radius: 100%;
+  -webkit-animation: shadow 1s linear infinite;
+}
+
+@-webkit-keyframes box {
+  0% {
+    top: 50px;
+    transform: rotate(0deg);
+  }
+  20% {
+    /* 从 20% 的地方开始变形 */
+    border-radius: 2px;
+  }
+  50% {
+    top: 80px;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 25px;
+  }
+  80% {
+    /* 到 80% 的地方恢复原状  */
+    border-radius: 2px;
+  }
+  100% {
+    top: 50px;
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes shadow {
+  0%, 100% {
+    left: 54px;
+    width: 40px;
+    background: #EAEAEA;
+  }
+  50% {
+    top: 126px;
+    left: 50px;
+    /* 让阴影保持在原位 */
+    width: 50px;
+    height: 7px;
+    background: #EEE;
+  }
+}
+
+/*# sourceMappingURL=animate.css.map */

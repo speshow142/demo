@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>伪元素实现八卦</title>
+    <link rel="stylesheet" href="yin-yang.css" media="screen">
+    <style media="screen">
+      h1 {
+        font-variant: small-caps;
+      }
+      p {
+        padding-left: 10em;
+        /*width: 666px;*/
+        text-indent: -2em;
+        /*background-color: green;*/
+        text-decoration: overline;
+        color: black;
+        text-shadow: black 2px 2px 2px;
+        /*direction: rtl;*/
+      }
+
+      img {
+        vertical-align: bottom;
+      }
+      span.raise {
+        vertical-align: super;
+        text-decoration: overline underline;;
+        color: red;
+      }
+      span.lower {
+        vertical-align: sub;
+      }
+    </style>
+  </head>
+  <body>
+    <p>今天天气很好，我们晚上出去吃火锅。</p>
+    <p>fuck fdsjk jfklds <img src="write.jpg" alt="" /> jklfd <span class="raise">superscripted</span> sjklf <span class="lower">subscripted</span> sjkfdsl fdsklj fddksjl fkf djs</p>
+  </body>
+  <script type="text/javascript">
+
+  </script>
+</html>
